@@ -1,5 +1,7 @@
-import React from "react";
-import "./App.css";
+import React from 'react';
+import Logo from './components/DisplayComponents/Logo';
+import Display from './components/DisplayComponents/Display';
+import './App.css';
 // STEP 4 - import the button and display components
 // Don't forget to import any extra css/scss files you build into the correct component
 
@@ -17,6 +19,7 @@ function App() {
     <div className="container">
       <Logo />
       <div className="App">
+        <Display />
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
       </div>
     </div>
