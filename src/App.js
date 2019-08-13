@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from './components/DisplayComponents/Logo';
 import {Display} from './components/DisplayComponents/Display';
+import Numbers from './components/ButtonComponents/NumberButtons/Numbers'
 // import Button
 import './App.css';
 
@@ -16,7 +17,7 @@ function App() {
       <Logo />
       <div className="App">
         <Display number={0} />
-        
+        <Numbers />
       </div>
     </div>
   );
