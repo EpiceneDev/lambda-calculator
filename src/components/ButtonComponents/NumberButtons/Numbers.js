@@ -3,8 +3,9 @@ import NumberButton from './NumberButton'
 import { numbers } from '../../../data'
 
 const Numbers = () => {
-  const {buttonNumbers, setButtonNumbers} = useState(numbers)
-  
+  const [buttonNumbers, setButtonNumbers] = useState(numbers)
+  console.log(numbers)
+  // let buttonNumbers = [1, 2, 3, 4, 5]
   return (
     <div>
       {buttonNumbers.map(number => <NumberButton text={number} />)}
