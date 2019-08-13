@@ -1,6 +1,6 @@
 import React from 'react';
-import Numbers from './Numbers'
-import { numbers } from '../../../data'
+// import Numbers from './Numbers'
+
 
 const NumberButton = (props) => {
   return (
