@@ -8,7 +8,7 @@ const Numbers = () => {
   // let buttonNumbers = [1, 2, 3, 4, 5]
   return (
     <div>
-      {buttonNumbers.map(number => <NumberButton text={number} />)}
+      {buttonNumbers.map(number => <NumberButton key={number} text={number} />)}
     </div>
   );
 };

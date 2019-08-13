@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Display = (props) => {
+const Display = (props) => {
   console.log("Display: ", props, props.number)
   return (
     <div className="display">
@@ -8,3 +8,5 @@ export const Display = (props) => {
     </div>
     );
 };
+
+export default Display;
