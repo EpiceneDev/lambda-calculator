@@ -1,11 +1,11 @@
 import React from "react";
-import { Numbers } from '../../../data'
+// import { Numbers } from '../../../data'
 
 //import any components needed
 
 //Import your array data to from the provided data file
 
-const Numbers = () => {
+export default const Numbers = () => {
   // STEP 2 - add the imported data to state
   return (
     <div>

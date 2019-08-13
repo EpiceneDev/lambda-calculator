@@ -15,7 +15,7 @@ function App() {
     <div className="container">
       <Logo />
       <div className="App">
-        <Display />
+        <Display number={0} />
         
       </div>
     </div>
