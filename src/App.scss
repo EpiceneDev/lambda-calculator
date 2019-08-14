@@ -1,6 +1,12 @@
 .App {
     background-color: red;
-    div{
+    max-width: 20rem;
+    height: 15rem;
+    .container {
         color: blue;
     }
+}
+
+.logo-container {
+    background-color: red;
 }
