@@ -2,13 +2,14 @@ import React, { useState } from "react"
 import NumberButton from './NumberButton'
 import { numbers } from '../../../data'
 
-const Numbers = () => {
-  const [buttonNumbers, setButtonNumbers] = useState(numbers)
-  console.log(numbers)
-  // let buttonNumbers = [1, 2, 3, 4, 5]
+const Numbers = (props) => {
+  const [buttonNumbers, setButtonNumbers] = useState(numbers);
+  console.log("Numbers: ", props);
   return (
     <div>
-      {buttonNumbers.map(number => <NumberButton key={number} text={number} />)}
+      {buttonNumbers.map(number => {
+        return <NumberButton key={number} text={number} addNumber={props.addNumber} />
+      })}
     </div>
   );
 };
