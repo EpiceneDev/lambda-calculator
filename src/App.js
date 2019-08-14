@@ -18,6 +18,9 @@ function App() {
   const [displayValue, setDisplayValue] = useState("0");
   const addNumber = (number) => {
     setDisplayValue(displayValue => displayValue + number);
+  };
+  const addOperator = (operator) => {
+    setDisplayValue(displayValue => displayValue + " " + operator + " ");
   }
   return (
     <div className="container">
@@ -25,7 +28,7 @@ function App() {
       <div className="App">
         <Display number={displayValue} />
         <Numbers addNumber={addNumber} />
-        <Operators />
+        <Operators addOperator={addOperator} />
         <Specials />
       </div>
     </div>
